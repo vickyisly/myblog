@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <style type="text/css">
+            body{
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Myblog</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">首页</a></li>
+                        <li><a href="/login">登入</a></li>
+                        <li><a href="/logout">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="container" class="container">
+
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>欢迎来到myBlog</h1>
+                    <p>这是一个基于node.js的系统.</p>
+                    <p><a class="btn btn-primary btn-lg" role="button" href="/login">登入</a> <a class="btn btn-lg" role="button" href="/reg">注册</a></p>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Carbo  说</h2>
+                        <p>东风破早梅 向暖一枝开  冰雪无人见 春从天上来 </p>
+                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>BYVoid 说</h2>
+                        <p>
+                            Open Chinese Convert（OpenCC ）是一个开源的中文简繁转换项目，
+                            致力于制作高质量的基于统计预料的简繁转换词库。
+                            还提供函数库(libopencc) 、命令行简繁转换工具、人工校对工具、词典生成程序、
+                            在线转换服务及图形用户界面。
+                        </p>
+                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>佛振 说</h2>
+                        <p>中州韵输入法引擎 / Rime Input Method Engine 取意历史上通行的中州韵，
+                            愿写就一部汇集音韵学智慧的输入法经典之作。
+                            项目网站设在 http://code.google.com/p/rimeime/
+                            创造应用价值是一方面，更要坚持对好技术的追求，希望能写出灵动而易于扩展的代码，
+                            使其成为一款个性十足的开源输入法。</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <footer>
+                <p>亲爱的，欢迎光临 <a href="http://localhost:3000">myBlog</a>。</p>
+            </footer>
+        </div>
+
+    </body>
+
+</html>
